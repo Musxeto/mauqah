@@ -35,7 +35,7 @@ const Homepage = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="mt-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-center hover:text-pink-500 transition-colors duration-300">
+          <h2 className="text-3xl md:text-5xl font-bold text-center hover:text-pink-500 transition-colors duration-300">
             Hunza Project
           </h2>
 
@@ -52,7 +52,7 @@ const Homepage = () => {
               className="w-full h-80 object-cover rounded-lg"
             />
             <motion.div
-              className="absolute inset-0 bg-black opacity-30"
+              className="absolute inset-0 bg-black opacity-30 rounded-lg"
               whileHover={{ opacity: 0.4 }}
               transition={{ duration: 0.3 }}
             />
