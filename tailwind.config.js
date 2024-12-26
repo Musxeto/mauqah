@@ -32,6 +32,7 @@ export default {
           800: "#1f2937",
           900: "#111827", // Dark gray for text
         },
+        customDarkPink: "#FF6AA4",
       },
       fontFamily: {
         sans: ["Inter", "Sans-serif"],
