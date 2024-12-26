@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full bg-[#FF99C2] text-white shadow-lg transition-all duration-300 z-50 ${
+      className={`fixed w-full bg-[#FF99C2] text-white shadow-lg transition-all duration-300  z-50 ${
         isOpen ? "border-b-[4px] border-[#FF6AA4]" : "border-b-[2px]"
       }`}
     >

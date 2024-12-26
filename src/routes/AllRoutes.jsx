@@ -11,6 +11,7 @@ const NotFound = React.lazy(() => import('../pages/NotFound'));
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Loading from 'react-loading';
+import Projects from '../pages/Projects';
 const AllRoutes = () => {
   return(
     <BrowserRouter>
@@ -37,7 +38,8 @@ const AllRoutes = () => {
         <Route path="/wazirabad-field-study" element={<WazirabadFieldStudy />} />
         <Route path="/visit-to-jajja" element={<VisitToJajja />} />
         <Route path="/gender-empowerment-society" element={<GenderEmpowermentSociety />} />
-        <Route path='resources' element={<Resources />} />
+        <Route path='/resources' element={<Resources />} />
+        <Route path='/projects' element={<Projects />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
