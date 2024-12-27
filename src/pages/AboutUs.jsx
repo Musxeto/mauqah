@@ -3,8 +3,7 @@ import React from 'react';
 const ProfileCard = ({ name, description }) => {
   return (
     <div className="bg-custom bg-gradient-to-br from-[#f577aa] to-[#ffa0d4] shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
-      <h2 className="text-xl text-center
-       md:text-3xl font-semibold text-white mb-2">{name}</h2>
+      <h2 className="text-xl text-center md:text-3xl font-semibold text-white mb-2">{name}</h2>
       <p className="text-white text-lg">{description}</p>
     </div>
   );
