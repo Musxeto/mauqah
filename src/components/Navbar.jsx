@@ -99,14 +99,14 @@ const Navbar = () => {
       <div
         className={`${
           isOpen ? "max-h-screen" : "max-h-0"
-        } text-white overflow-hidden transition-all duration-500 bg-[#FF99C2] md:hidden`}
+        } text-gray-800 overflow-hidden transition-all duration-500 bg-yellow-50 md:hidden`}
       >
         <div className="flex flex-col px-4 py-6 space-y-4">
           {/* Projects Dropdown */}
           <div className="relative">
             <button
               onClick={toggleDropdown}
-              className="flex items-center justify-between font-semibold w-full px-4 py-2 bg-[#FF6AA4] rounded text-white"
+              className="flex items-center justify-between font-semibold w-full px-4 py-2 bg-yellow-300 rounded text-white"
             >
               <span>Projects</span>
               <FaChevronDown
@@ -135,7 +135,7 @@ const Navbar = () => {
                     setIsDropdownOpen(false);
                   }}
                   
-                  className="block px-4 py-2 hover:bg-[#FF6AA4] hover:text-white"
+                  className="block px-4 py-2 hover:bg-yellow-50 hover:text-white"
                 >
                   {project}
                 </Link>
