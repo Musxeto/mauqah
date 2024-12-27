@@ -20,7 +20,7 @@ const InterviewsSabrina = () => {
             Part 1
           </h3>
           <AudioPlayer
-            src="/public/sabrina1.m4a"
+            src="/sabrina1.m4a"
             customAdditionalControls={[]}
             showJumpControls={false}
             layout="horizontal-reverse"
@@ -35,7 +35,7 @@ const InterviewsSabrina = () => {
             Part 2
           </h3>
           <AudioPlayer
-            src="/public/sabrina2.m4a"
+            src="/sabrina2.m4a"
             customAdditionalControls={[]}
             showJumpControls={false}
             layout="horizontal-reverse"
@@ -60,7 +60,7 @@ const InterviewsSitara = () => {
         </div>
         <div>
           <AudioPlayer
-            src="/public/sitara.m4a"
+            src="/sitara.m4a"
             customAdditionalControls={[]}
             showJumpControls={false}
             layout="horizontal-reverse"

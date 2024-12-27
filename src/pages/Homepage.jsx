@@ -44,7 +44,7 @@ const Homepage = () => {
             to do something.
           </p>
         </motion.div>
-
+        <div id="hunza"></div>
         {/* Hunza Project Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
