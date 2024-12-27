@@ -21,7 +21,7 @@ const Homepage = () => {
     <div className="bg-gray-900 text-gray-200 min-h-screen">
       {/* Hero Section */}
       <HeroSection />
-      
+
       {/* Content Section */}
       <div className="max-w-6xl mx-auto p-6 sm:p-12 lg:p-10">
         {/* Hunza Project Section */}
@@ -34,7 +34,16 @@ const Homepage = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-center hover:text-pink-400 transition-colors duration-300">
             Hunza Project
           </h2>
-
+          <motion.div
+            className="relative overflow-hidden rounded-lg mt-8"
+            whileHover={{ scale: 1.05 }}
+          >
+            <img
+              src="/shunza.jpg"
+              alt="Shunza Top Image"
+              className="w-full h-96 min-h-3.5 object-cover rounded-lg"
+            />
+          </motion.div>
           {/* First Paragraph and Image */}
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div
@@ -200,7 +209,7 @@ const Homepage = () => {
               />
             </motion.div>
           </div>
-          
+
           {/* Fourth Paragraph and Image */}
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div
@@ -258,7 +267,7 @@ const Homepage = () => {
           </motion.div>
 
           {/* Interviews */}
-          
+
           <InterviewsSitara />
         </motion.div>
       </div>
