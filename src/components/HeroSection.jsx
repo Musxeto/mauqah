@@ -99,7 +99,7 @@ const HeroSection = () => {
             speed: 0.2,
             points: 5,
           }}
-          className="absolute bottom-0 w-full"
+          className="absolute bottom-0 mt-10 w-full"
         />
       </div>
     </div>
