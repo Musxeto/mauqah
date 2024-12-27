@@ -1,0 +1,16 @@
+# Redirects for the application
+
+# Redirect root to homepage
+/  / 
+
+# Redirects for pages
+/about  /about
+/contact  /contact
+/wazirabad-field-study  /wazirabad-field-study
+/visit-to-jajja  /visit-to-jajja
+/gender-empowerment-society  /gender-empowerment-society
+/resources  /resources
+/projects  /projects
+
+# Catch-all redirect for 404 Not Found
+/*  /404  404
