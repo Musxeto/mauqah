@@ -4,7 +4,7 @@ import "react-h5-audio-player/lib/styles.css";
 
 const InterviewsSabrina = () => {
   return (
-    <div className="bg-customDarkPink text-white py-12">
+    <div className="bg-inherit text-white py-12">
       <div className="max-w-6xl mx-auto px-6 sm:px-12 lg:px-16">
         {/* Main Heading */}
         <div className="text-center mb-12">
@@ -50,7 +50,7 @@ const InterviewsSabrina = () => {
 
 const InterviewsSitara = () => {
   return (
-    <div className="bg-customDarkPink text-white py-12">
+    <div className="bg-inherit text-white py-12">
       <div className="max-w-6xl mx-auto px-6 sm:px-12 lg:px-16">
         {/* Main Heading */}
         <div className="text-center mb-12">
