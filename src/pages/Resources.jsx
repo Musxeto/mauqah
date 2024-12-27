@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { FaLink } from "react-icons/fa";
 
 const Resources = () => {
   const resources = [
@@ -17,11 +18,12 @@ const Resources = () => {
   ];
 
   return (
-    <div className="bg-customDarkPink min-h-screen py-20 px-6">
+    <div className="bg-yellow-50 min-h-screen py-20 px-6">
       <div className="max-w-7xl mx-auto text-center mb-10">
-        <h1 className="text-4xl font-bold text-white">Resources</h1>
-        <p className="text-white mt-4">
-          Explore insightful talks, articles, and organizations advocating for women’s education and empowerment.
+        <h1 className="text-4xl font-bold text-gray-800">Resources</h1>
+        <p className="text-gray-800 mt-4">
+          Explore insightful talks, articles, and organizations advocating for
+          women’s education and empowerment.
         </p>
       </div>
       <div className="max-w-5xl mx-auto">
@@ -32,9 +34,9 @@ const Resources = () => {
                 href={resource.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg font-semibold underline text-pink-800"
+                className="flex items-center text-lg font-semibold hover:underline text-yellow-800"
               >
-                {resource.title}
+                <FaLink className="mr-2 text-yellow-800" /> {resource.title}
               </a>
             </li>
           ))}

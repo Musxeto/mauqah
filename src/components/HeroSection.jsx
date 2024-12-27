@@ -6,12 +6,12 @@ import { useNavigate } from "react-router-dom";
 const HeroSection = () => {
   const navigate = useNavigate();
   return (
-    <div className="relative min-h-screen flex-col items-center justify-center bg-gradient-to-br from-[#FF99C2] to-[#FFC2E4] text-white">
+    <div className="relative min-h-screen flex-col items-center justify-center bg-gradient-to-br from-[#F0CC00] to-[#FBCE80] text-white">
       
-      <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#FF99C2] to-[#FFC2E4] text-white">
+      <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#FABC05] to-[#FBCE90] text-white">
         {/* Background Wave */}
         <Wave
-          fill="#FF6AA4"
+          fill="white"
           options={{
             height: 75,
             amplitude: 20,
@@ -59,7 +59,7 @@ const HeroSection = () => {
               onClick={() => {
                 navigate("/projects");
               }}
-              className="bg-[#FF3B86] hover:bg-[#FF6AA4] transition-all px-8 py-3 rounded-full text-sm md:text-lg  font-semibold shadow-lg"
+              className="bg-yellow-400 hover:bg-[#FACD99] transition-all px-8 py-3 rounded-full text-sm md:text-lg  font-semibold shadow-xl"
             >
               Projects
             </button>
@@ -67,14 +67,14 @@ const HeroSection = () => {
               onClick={() => {
                 navigate("/about");
               }}
-              className="bg-transparent border border-white hover:bg-white hover:text-[#FF6AA4] transition-all px-8 py-3 rounded-full text-sm md:text-lg font-semibold"
+              className="bg-transparent border border-white hover:bg-white hover:text-yellow-300 transition-all px-8 py-3 rounded-full text-sm md:text-lg font-semibold"
             >
               Learn More
             </button>
           </motion.div>
         </div>
       </div>
-      <div className="bg-customDarkPink pb-20 ">
+      <div className="bg-white pb-20 ">
         
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -82,25 +82,15 @@ const HeroSection = () => {
           transition={{ duration: 1 }}
           className="text-center"
         >
-          <h2 className="text-3xl md:text-4xl font-bold hover:text-pink-400 duration-300">
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 hover:text-yellow-400 duration-300">
             "Mauqah" <span className="urdu">(موقع)</span>
           </h2>
-          <p className="text-lg md:text-xl mt-4">
+          <p className="text-lg text-gray-800 md:text-xl mt-4">
             A word from the Urdu language. The direct translation is
             “opportunity”: a time or set of circumstances that makes it possible
             to do something.
           </p>
         </motion.div>
-        <Wave
-          fill="#111827"
-          options={{
-            height: 100,
-            amplitude: 20,
-            speed: 0.2,
-            points: 5,
-          }}
-          className="absolute bottom-0 mt-10 w-full"
-        />
       </div>
     </div>
   );

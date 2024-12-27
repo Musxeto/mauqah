@@ -22,10 +22,10 @@
 .custom-audio-player {
   background-color: transparent !important;
   box-shadow: none !important;
-  border: 2px solid white;
+  border: 2px solid #333;
   border-radius: 10px;
   padding: 5px;
-  color: white;
+  color: #333;
 }
 
 .custom-audio-player .rhap_controls-section {
@@ -35,11 +35,11 @@
 
 .custom-audio-player .rhap_time,
 .custom-audio-player .rhap_progress-bar {
-  color: white;
+  color: #333;
 }
 
 .custom-audio-player .rhap_play-pause-button button {
-  color: white;
+  color: #333;
   font-size: 24px;
 }
 

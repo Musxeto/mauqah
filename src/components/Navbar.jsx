@@ -11,8 +11,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full bg-[#FF99C2] text-white shadow-lg transition-all duration-300  z-50 ${
-        isOpen ? "border-b-[4px] border-[#FF6AA4]" : "border-b-[2px]"
+      className={`fixed w-full bg-yellow-50 text-gray-800 shadow-lg transition-all duration-300  z-50 ${
+        isOpen ? "border-b-[4px] border-yellow-400" : "border-b-[2px]"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@ const Navbar = () => {
               onMouseLeave={toggleDropdown}
               // onClick={toggleDropdown}
             >
-              <button className="font-semibold flex items-center space-x-2 text-white hover:text-[#FF3B86]">
+              <button className="font-semibold flex items-center space-x-2 text-gray-800 ">
                 <span>Projects</span>
                 <FaChevronDown
                   className={`transition-transform duration-300 ${
@@ -54,7 +54,7 @@ const Navbar = () => {
               </button>
               {/* Dropdown */}
               <div
-                className={`absolute left-0 top-full  bg-white text-black rounded shadow-lg mt-2 transition-all duration-300 ${
+                className={`absolute left-0 top-full  bg-white text-gray-800 rounded shadow-xl mt-2 transition-all duration-300 ${
                   isDropdownOpen
                     ? "opacity-100 max-h-screen"
                     : "opacity-0 max-h-0"
@@ -68,7 +68,7 @@ const Navbar = () => {
                   <Link
                     key={index}
                     to={`/${project.toLowerCase().replace(/ /g, "-")}`}
-                    className="block px-4 py-2 hover:bg-[#FF6AA4] hover:text-white"
+                    className="block px-4 py-2 hover:bg-yellow-100 "
                   >
                     {project}
                   </Link>
@@ -79,17 +79,17 @@ const Navbar = () => {
             {/* About and Resources */}
             <Link
               to="/about"
-              className="font-semibold text-white hover:text-[#FF3B86] transition-all group relative"
+              className="font-semibold text-gray-800 hover:text-yellow-600 transition-all group relative"
             >
               <span>About</span>
-              <div className="absolute text-white left-0 bottom-0 w-0 h-0.5 bg-[#FF3B86] transition-all group-hover:w-full"></div>
+              <div className="absolute text-gray-800 left-0 bottom-0 w-0 h-0.5 bg-yellow-600 transition-all group-hover:w-full"></div>
             </Link>
             <Link
               to="/resources"
-              className="font-semibold text-white hover:text-[#FF3B86] transition-all group relative"
+              className="font-semibold text-gray-800 hover:text-yellow-600 transition-all group relative"
             >
               <span>Resources</span>
-              <div className="absolute left-0 bottom-0 w-0 h-0.5 text-white bg-[#FF3B86] transition-all group-hover:w-full"></div>
+              <div className="absolute left-0 bottom-0 w-0 h-0.5 text-white bg-yellow-600 transition-all group-hover:w-full"></div>
             </Link>
           </div>
         </div>

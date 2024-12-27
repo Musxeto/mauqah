@@ -18,7 +18,7 @@ const Homepage = () => {
   };
 
   return (
-    <div className="bg-gray-900 text-gray-200 min-h-screen">
+    <div className="bg-white text-gray-800 min-h-screen">
       {/* Hero Section */}
       <HeroSection />
 
@@ -31,7 +31,7 @@ const Homepage = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="mt-12"
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-center hover:text-pink-400 transition-colors duration-300">
+          <h2 className="text-3xl md:text-5xl font-bold text-center text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
             Hunza Project
           </h2>
           <motion.div
@@ -68,12 +68,12 @@ const Homepage = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              <p className="border-l-4 border-gray-700 pl-4 italic">
+              <p className="border-l-4 border-yellow-700 pl-4 italic">
                 Pakistan’s societies are as diverse as its terrain. While the
                 South is gradually moving away from conservative mindsets,{" "}
-                <span className="font-bold text-pink-400">Hunza</span> is
+                <span className="font-bold text-yellow-400">Hunza</span> is
                 arguably the safest place for women, boasting the{" "}
-                <span className="underline text-pink-400">
+                <span className="underline text-yellow-400">
                   highest literacy rate
                 </span>{" "}
                 in the country, nearing 100%.
@@ -89,8 +89,8 @@ const Homepage = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              <p className="border-l-4 border-pink-700 pl-4 italic">
-                In <span className="font-bold text-pink-400">Gulmit</span>,
+              <p className="border-l-4 border-yellow-700 pl-4 italic">
+                In <span className="font-bold text-yellow-400">Gulmit</span>,
                 surrounded by glacier-clad mountains, Shazelle experienced the
                 unique culture of Hunza. The icy winds danced on her skin,
                 bringing the scent of poplar as the cold fought against the
@@ -98,7 +98,7 @@ const Homepage = () => {
                 mid-July. Initially, Shazelle feared the language barrier and
                 shy interactions she had become accustomed to. However,
                 interacting with the girls at{" "}
-                <span className="font-bold text-pink-400">Al-Amyn School</span>{" "}
+                <span className="font-bold text-yellow-400">Al-Amyn School</span>{" "}
                 helped her understand the valley’s wonders and the community’s
                 openness to education, especially for girls. The prevalent
                 teaching in Hunza is,{" "}
@@ -150,11 +150,11 @@ const Homepage = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              <p className="border-l-4 border-pink-700 pl-4 italic">
+              <p className="border-l-4 border-yellow-700 pl-4 italic">
                 As Shazelle and her mentor,{" "}
-                <span className="font-bold text-pink-400">Dr. Shehnaz</span>,
+                <span className="font-bold text-yellow-400">Dr. Shehnaz</span>,
                 drove further into{" "}
-                <span className="font-bold text-pink-400">Ghulkin</span>, the
+                <span className="font-bold text-yellow-400">Ghulkin</span>, the
                 mountains seemed to close around them. The name Ghulkin, meaning
                 “well” in Brushiski, was fitting. The lush plains and ripening
                 wheat fields created a breathtaking landscape. The
@@ -179,7 +179,7 @@ const Homepage = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              <p className="border-l-4 border-pink-500 pl-4 italic">
+              <p className="border-l-4 border-yellow-900 pl-4 italic">
                 Miss Sabrina, a teacher at Al-Amyn, shared her story of helping
                 local mothers face their issues, spreading awareness, and
                 working with younger children to build strong foundations. As
@@ -234,9 +234,9 @@ const Homepage = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              <p className="border-l-4 border-pink-900 pl-4 italic leading-relaxed">
+              <p className="border-l-4 border-yellow-900 pl-4 italic leading-relaxed">
                 Shazelle and Dr. Shehnaz also explored the village of{" "}
-                <span className="font-bold text-pink-400">Karimabad</span>,
+                <span className="font-bold text-yellow-400">Karimabad</span>,
                 focusing on the story of the lowest caste in Hunza, who are
                 blacksmiths and musicians. These villagers face constant
                 discrimination and have undergone numerous name changes over the
