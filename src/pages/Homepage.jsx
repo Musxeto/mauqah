@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import HeroSection from "../components/HeroSection";
 import { motion } from "framer-motion";
-import { InterviewsSabrina, InterviewsSitara } from "../components/Interviews";
+import { InterviewsSabrina, InterviewsSitara, SnippetsShehnaz } from "../components/Interviews";
 
 const Homepage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -269,6 +269,7 @@ const Homepage = () => {
           {/* Interviews */}
 
           <InterviewsSitara />
+          <SnippetsShehnaz />
         </motion.div>
       </div>
     </div>
