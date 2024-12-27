@@ -2,7 +2,7 @@ import React from "react";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 
-const Interviews = () => {
+const InterviewsSabrina = () => {
   return (
     <div className="bg-customDarkPink text-white py-12">
       <div className="max-w-6xl mx-auto px-6 sm:px-12 lg:px-16">
@@ -48,4 +48,29 @@ const Interviews = () => {
   );
 };
 
-export default Interviews;
+const InterviewsSitara = () => {
+  return (
+    <div className="bg-customDarkPink text-white py-12">
+      <div className="max-w-6xl mx-auto px-6 sm:px-12 lg:px-16">
+        {/* Main Heading */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold hover:text-pink-500 transition-colors duration-300">
+            Interview with Miss Sitara
+          </h2>
+        </div>
+        <div>
+          <AudioPlayer
+            src="/public/sitara.m4a"
+            customAdditionalControls={[]}
+            showJumpControls={false}
+            layout="horizontal-reverse"
+            autoPlay={false}
+            className="custom-audio-player"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export {InterviewsSabrina,InterviewsSitara}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import HeroSection from "../components/HeroSection";
 import { FaMountain, FaBook, FaChalkboardTeacher } from "react-icons/fa";
 import { motion } from "framer-motion";
-import Interviews from "../components/Interviews";
+import {InterviewsSabrina, InterviewsSitara} from "../components/Interviews";
 
 const Homepage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -146,7 +146,7 @@ const Homepage = () => {
             </p>
             <br />
             {/*Interviews here*/}
-            <Interviews />
+            <InterviewsSabrina />
             <p className="border-l-4 border-pink-900 pl-4 italic leading-relaxed">
               Shazelle and Dr. Shehnaz also explored the village of{" "}
               <span className="font-bold text-pink-900">Karimabad</span>,
@@ -177,6 +177,7 @@ const Homepage = () => {
             </p>
           </motion.div>
         </motion.div>
+        <InterviewsSitara />
         <div className="mt-12">
           <h2 className="text-3xl md:text-5xl font-bold text-center hover:text-pink-500 transition-colors duration-300">
             Al Amyn School (Hunza)

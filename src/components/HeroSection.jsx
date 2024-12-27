@@ -2,24 +2,25 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Wave from "react-wavify";
-
+import { useNavigate } from "react-router-dom";
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#FF99C2] to-[#FFC2E4] text-white">
       {/* Background Wave */}
       <Wave
         fill="#FF6AA4"
         options={{
-          height: 40,
+          height: 75,
           amplitude: 20,
           speed: 0.2,
           points: 5,
         }}
         className="absolute bottom-0 w-full"
       />
-      
+
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 text-center">
+      <div className="max-w-7xl mx-auto px-6 py-6 sm:px-12 lg:px-16 text-center">
         {/* Urdu Quote */}
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -52,18 +53,22 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 1 }}
           className="mt-10 flex justify-center space-x-4"
         >
-          <Link
-            to="/projects"
+          <button
+            onClick={() => {
+              navigate("/projects");
+            }}
             className="bg-[#FF3B86] hover:bg-[#FF6AA4] transition-all px-8 py-3 rounded-full text-sm md:text-lg  font-semibold shadow-lg"
           >
-             Projects
-          </Link>
-          <Link
-            to="/about"
+            Projects
+          </button>
+          <button
+            onClick={() => {
+              navigate("/about");
+            }}
             className="bg-transparent border border-white hover:bg-white hover:text-[#FF6AA4] transition-all px-8 py-3 rounded-full text-sm md:text-lg font-semibold"
           >
             Learn More
-          </Link>
+          </button>
         </motion.div>
       </div>
     </div>
