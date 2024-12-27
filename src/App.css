@@ -18,3 +18,36 @@
     font-family: 'Noto Nastaliq Urdu', sans-serif;
     animation: fadeIn 2s ease-in-out;
 }
+/* Custom styles for the audio player */
+.custom-audio-player {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+}
+
+.custom-audio-player .rhap_controls-section {
+  /* background: rgba(255, 255, 255, 0.1); */
+  border-radius: 5px;
+}
+
+.custom-audio-player .rhap_time,
+.custom-audio-player .rhap_progress-bar {
+  color: white;
+}
+
+.custom-audio-player .rhap_play-pause-button button {
+  color: white;
+  font-size: 24px;
+}
+
+.custom-audio-player .rhap_progress-bar {
+  background: #333;
+  border-radius: 5px;
+}
+
+.custom-audio-player .rhap_progress-bar-show-download {
+  background: #333;
+}
