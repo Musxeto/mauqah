@@ -25,7 +25,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-2xl md:text-5xl font-bold urdu leading-tight "
+          className="text-2xl md:text-4xl font-bold urdu leading-tight "
         >
           "موقع کی تلاش میں نہ رہ، بلبل گُزر چُکی"
           <br />

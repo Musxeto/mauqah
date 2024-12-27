@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroSection from "../components/HeroSection";
 import { FaMountain, FaBook, FaChalkboardTeacher } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Homepage = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const [selectedImage, setSelectedImage] = useState("");
+
+  const openModal = (image) => {
+    setSelectedImage(image);
+
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+
+    setSelectedImage("");
+  };
+
   return (
     <div className="bg-customDarkPink text-white min-h-screen">
       {/* Hero Section */}
@@ -19,7 +35,7 @@ const Homepage = () => {
           className="text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold hover:text-pink-500 transition-colors duration-300">
-            "Mauqah" (موقع)
+            "Mauqah" <span className="urdu">(موقع)</span>
           </h2>
           <p className="text-lg md:text-xl mt-4">
             A word from the Urdu language. The direct translation is
@@ -47,7 +63,7 @@ const Homepage = () => {
             transition={{ duration: 1 }}
           >
             <img
-              src="/Hunza.jpg" 
+              src="/Hunza.jpg"
               alt="Hunza Landscape"
               className="w-full h-80 object-cover rounded-lg"
             />
@@ -130,7 +146,67 @@ const Homepage = () => {
             </p>
           </motion.div>
         </motion.div>
+        <div className="mt-12">
+        <h2 className="text-3xl md:text-5xl font-bold text-center hover:text-pink-500 transition-colors duration-300">
+        Al Amyn School (Hunza)
+        </h2>
+        <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+          {[
+            "/HunzaSchool1.jpg",
+            "/HunzaSchool.jpg",
+            "/HunzaSchool2.jpg",
+            "/HunzaSchool3.jpg",
+            "/HunzaSchool4.jpg",
+            "/HunzaSchool5.jpg",
+          ].map((image, index) => (
+            <motion.div
+              key={index}
+              className="relative overflow-hidden rounded-lg cursor-pointer"
+              whileHover={{ scale: 1.05 }}
+              onClick={() => openModal(image)}
+            >
+              <img
+                src={image}
+                alt={`Hunza School ${index + 1}`}
+                className="w-full h-64 object-cover rounded-lg transition-transform duration-300"
+              />
+              <motion.div
+                className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-white text-lg font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300"
+                whileHover={{ opacity: 1 }}
+              >
+                View Image
+              </motion.div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Modal for Image Pop-up */}
+        {isOpen && (
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3 }}
+              className="relative max-w-4xl max-h-screen bg-white p-4 rounded-lg"
+            >
+              <img
+                src={selectedImage}
+                alt="Selected"
+                className="max-w-full max-h-screen rounded-lg"
+              />
+              <button
+                className="absolute top-4 right-4 text-black text-2xl hover:text-gray-500"
+                onClick={closeModal}
+              >
+                &times;
+              </button>
+            </motion.div>
+          </div>
+        )}
       </div>
+      </div>
+      {/* Image Gallery Section */}
+      
     </div>
   );
 };
