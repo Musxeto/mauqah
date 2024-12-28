@@ -169,6 +169,16 @@ const GenderEmpowermentSociety = () => {
           transition={{ duration: 1, delay: 0.6 }}
           className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8"
         >
+          <motion.div
+            className="relative overflow-hidden rounded-lg shadow-2xl"
+            whileHover={{ scale: 1.05 }}
+          >
+            <video
+              controls
+              className="w-full h-auto object-cover rounded-lg shadow-2xl bg-slate-200"
+              src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fwhiteribbon.mp4?alt=media&token=1bbee04c-d521-4f85-8d55-506381bcbf46"
+            ></video>
+          </motion.div>
           <div>
             <h2 className="text-3xl md:text-5xl font-bold text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
               White Ribbon Campaign
