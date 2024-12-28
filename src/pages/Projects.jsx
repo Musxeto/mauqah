@@ -1,5 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -17,83 +18,119 @@ const Projects = () => {
           </h1>
         </motion.div>
       </div>
-
-      {/* Content Section */}
       <div className="max-w-6xl mx-auto p-6 sm:p-12 lg:p-10">
-
-        {/* Project 1 */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
-          className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8"
-        >
-          <motion.div className="relative overflow-hidden rounded-lg" whileHover={{ scale: 1.05 }}>
-            <img
-              src="/project1.jpg" // Add appropriate image for the project
-              alt="Project 1"
-              className="h-full object-cover rounded-lg"
-            />
+        <Link to={"/#hunza"}>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8"
+          >
+            <motion.div
+              className="relative overflow-hidden rounded-lg flex"
+              whileHover={{ scale: 1.05 }}
+            >
+              <img
+                src="/shunza.jpg"
+                alt="Project 3"
+                className="w-full object-cover rounded-lg h-80"
+              />
+            </motion.div>
+            <div className="flex flex-col justify-between">
+              <h2 className="text-3xl md:text-5xl font-bold text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
+                Hunza Project
+              </h2>
+              <p className="mt-4 text-lg md:text-xl leading-relaxed border-l-4 border-yellow-700 pl-4 italic">
+                Shazelle explores Hunza's progressive approach to women's
+                education, interviewing locals, students, and educators in
+                remote villages like Gulmit and Karimabad. The project
+                highlights Hunza's high female literacy rate and shares stories
+                of resilience and empowerment, especially through the Al-Amyn
+                School.
+              </p>
+            </div>
           </motion.div>
-          <div>
-            <h2 className="text-3xl md:text-5xl font-bold text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
-              Wazirabad Field Study
-            </h2>
-            <p className="mt-4 text-lg md:text-xl leading-relaxed border-l-4 border-yellow-700 pl-4 italic">
-              Wazirabad, a district in Sindh near Sukkur, was severely affected by the floods that hit Pakistan in 2022. The locals have been slowly rebuilding their lives. Shazelle aimed to interact with the women and girls of Wazirabad, learning their stories, understanding how they balance studies with societal pressures, and offering help wherever possible.
-            </p>
-          </div>
-        </motion.div>
-
-        {/* Project 2 */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.6 }}
-          className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8"
-        >
-          <motion.div className="relative overflow-hidden rounded-lg" whileHover={{ scale: 1.05 }}>
-            <img
-              src="/project2.jpg" // Add appropriate image for the project
-              alt="Project 2"
-              className="h-full object-cover rounded-lg"
-            />
+        </Link>
+        <br />
+        <br />
+        <Link to={"/gender-empowerment-society"}>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.9 }}
+            className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8"
+          >
+            <motion.div
+              className="relative overflow-hidden rounded-lg flex"
+              whileHover={{ scale: 1.05 }}
+            >
+              <img
+                src="/gender2.jpg"
+                alt="Project 3"
+                className="w-full object-cover rounded-lg h-80"
+              />
+            </motion.div>
+            <div className="flex flex-col justify-between">
+              <h2 className="text-3xl md:text-5xl font-bold text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
+                Gender Empowerment Society
+              </h2>
+              <p className="mt-4 text-lg md:text-xl leading-relaxed border-l-4 border-yellow-700 pl-4 italic">
+                The Gender Empowerment Society was founded by Shazelle to create
+                awareness about women's rights and empowerment, organizing
+                campaigns and initiatives to support women's education and
+                leadership in Pakistan.
+              </p>
+            </div>
           </motion.div>
-          <div>
+        </Link>
+        <br />
+        <br />
+        <Link to={"/wazirabad-field-study"}>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8"
+          >
+            <div>
+              <h2 className="text-3xl md:text-5xl font-bold text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
+                Wazirabad Field Study
+              </h2>
+            </div>
+            <div className="flex justify-between">
+              <p className="mt-4 text-lg md:text-xl leading-relaxed border-l-4 border-yellow-700 pl-4 italic">
+                Wazirabad, a district in Sindh near Sukkur, was severely
+                affected by the floods that hit Pakistan in 2022. The locals
+                have been slowly rebuilding their lives. Shazelle aimed to
+                interact with the women and girls of Wazirabad, learning their
+                stories, understanding how they balance studies with societal
+                pressures, and offering help wherever possible.
+              </p>
+            </div>
+          </motion.div>
+        </Link>
+        <br />
+        <br />
+        <Link to={"/visit-to-jajja"}>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.6 }}
+            className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8"
+          >
             <h2 className="text-3xl md:text-5xl font-bold text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
               Visit to Jajja
             </h2>
-            <p className="mt-4 text-lg md:text-xl leading-relaxed border-l-4 border-yellow-700 pl-4 italic">
-              Shazelle's visit to Jajja was focused on supporting the community in addressing basic needs and education. The trip included distributing relief materials and organizing educational sessions for the local youth.
-            </p>
-          </div>
-        </motion.div>
-
-        {/* Project 3 */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.9 }}
-          className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8"
-        >
-          <motion.div className="relative overflow-hidden rounded-lg" whileHover={{ scale: 1.05 }}>
-            <img
-              src="/project3.jpg" // Add appropriate image for the project
-              alt="Project 3"
-              className="h-full object-cover rounded-lg"
-            />
+            <div className="flex flex-col justify-between">
+              <p className="mt-4 text-lg md:text-xl leading-relaxed border-l-4 border-yellow-700 pl-4 italic">
+                Shazelle's visit to Jajja was focused on supporting the
+                community in addressing basic needs and education. The trip
+                included distributing relief materials and organizing
+                educational sessions for the local youth.
+              </p>
+            </div>
           </motion.div>
-          <div>
-            <h2 className="text-3xl md:text-5xl font-bold text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
-              Gender Empowerment Society
-            </h2>
-            <p className="mt-4 text-lg md:text-xl leading-relaxed border-l-4 border-yellow-700 pl-4 italic">
-              The Gender Empowerment Society was founded by Shazelle to create awareness about women's rights and empowerment, organizing campaigns and initiatives to support women's education and leadership in Pakistan.
-            </p>
-          </div>
-        </motion.div>
-
-        {/* Add more projects here... */}
+        </Link>
       </div>
     </div>
   );

@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const WazirabadFieldStudy = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleVideoLoad = () => {
+    setIsLoading(false); // Hide loading spinner once video is ready to play
+  };
+
   return (
     <div className="bg-white text-gray-800 min-h-screen pt-16">
       {/* Page Title */}
+      <div id="heading"></div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -17,7 +24,6 @@ const WazirabadFieldStudy = () => {
       </motion.div>
 
       {/* Content Section */}
-
       <div className="max-w-6xl mx-auto p-3 sm:p-12 lg:p-8">
         {/* Section 1 */}
         <motion.div
@@ -35,6 +41,7 @@ const WazirabadFieldStudy = () => {
             pressures, and offering help wherever possible.
           </p>
         </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -45,17 +52,23 @@ const WazirabadFieldStudy = () => {
             className="relative overflow-hidden rounded-lg col-span-1 md:col-span-1"
             whileHover={{ scale: 1.05 }}
           >
+            {isLoading && (
+              <div className="absolute inset-0 bg-gray-800 opacity-50 flex justify-center items-center">
+                <div className="w-16 h-16 border-4 border-t-4 border-yellow-600 border-solid rounded-full animate-spin"></div>
+              </div>
+            )}
             <video
               controls
               className="w-full h-auto object-cover rounded-lg"
               src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2FWazirabad1.mp4?alt=media&token=74cf5db3-0d13-4b3b-9764-b37bca38c83c"
+              onCanPlayThrough={handleVideoLoad}
             ></video>
           </motion.div>
           <div className="col-span-3 md:col-span-3">
             <h2 className="text-xl my-4 md:my-12 md:text-4xl font-bold text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
               Meeting with the Chairwoman of the Chandre Godh LSO
             </h2>
-            
+
             <p className="text-lg md:text-xl leading-relaxed border-l-4 border-yellow-700 pl-4 italic">
               During her visit, Shazelle conducted an independent study on the
               <i>impact of education on women in rural Pakistan</i>. She met{" "}
@@ -90,6 +103,7 @@ const WazirabadFieldStudy = () => {
             </p>
           </div>
         </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -100,10 +114,16 @@ const WazirabadFieldStudy = () => {
             className="relative overflow-hidden rounded-lg"
             whileHover={{ scale: 1.05 }}
           >
+            {isLoading && (
+              <div className="absolute inset-0 bg-gray-800 opacity-50 flex justify-center items-center">
+                <div className="w-16 h-16 border-4 border-t-4 border-yellow-600 border-solid rounded-full animate-spin"></div>
+              </div>
+            )}
             <video
               controls
               className="w-full h-auto object-cover rounded-lg"
               src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fwazirabad2.mov?alt=media"
+              onCanPlayThrough={handleVideoLoad}
             ></video>
           </motion.div>
 
@@ -111,30 +131,50 @@ const WazirabadFieldStudy = () => {
             className="relative overflow-hidden rounded-lg"
             whileHover={{ scale: 1.05 }}
           >
+            {isLoading && (
+              <div className="absolute inset-0 bg-gray-800 opacity-50 flex justify-center items-center">
+                <div className="w-16 h-16 border-4 border-t-4 border-yellow-600 border-solid rounded-full animate-spin"></div>
+              </div>
+            )}
             <video
               controls
               className="w-full h-auto object-cover rounded-lg"
               src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fwazirabad3.mov?alt=media"
+              onCanPlayThrough={handleVideoLoad}
             ></video>
           </motion.div>
+
           <motion.div
             className="relative overflow-hidden rounded-lg"
             whileHover={{ scale: 1.05 }}
           >
+            {isLoading && (
+              <div className="absolute inset-0 bg-gray-800 opacity-50 flex justify-center items-center">
+                <div className="w-16 h-16 border-4 border-t-4 border-yellow-600 border-solid rounded-full animate-spin"></div>
+              </div>
+            )}
             <video
               controls
               className="w-full h-auto object-cover rounded-lg"
               src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fwazirabad4.mov?alt=media"
+              onCanPlayThrough={handleVideoLoad}
             ></video>
           </motion.div>
+
           <motion.div
             className="relative overflow-hidden rounded-lg"
             whileHover={{ scale: 1.05 }}
           >
+            {isLoading && (
+              <div className="absolute inset-0 bg-gray-800 opacity-50 flex justify-center items-center">
+                <div className="w-16 h-16 border-4 border-t-4 border-yellow-600 border-solid rounded-full animate-spin"></div>
+              </div>
+            )}
             <video
               controls
               className="w-full h-auto object-cover rounded-lg"
               src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fwazirabad5.mov?alt=media"
+              onCanPlayThrough={handleVideoLoad}
             ></video>
           </motion.div>
         </motion.div>

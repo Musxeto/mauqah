@@ -11,10 +11,12 @@ import NotFound from '../pages/NotFound';
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Projects from '../pages/Projects';
+import ScrollToTop from './ScrollToTop';
 const AllRoutes = () => {
   return(
     <BrowserRouter>
     <Navbar />
+    <ScrollToTop />
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/about' element={<AboutUs />} />

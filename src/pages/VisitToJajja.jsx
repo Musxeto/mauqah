@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const VisitToJajja = () => {
   return (
-    <div className="bg-white text-gray-800 min-h-screen pt-16">
+    <div id="heading" className="bg-white text-gray-800 min-h-screen pt-16">
       {/* Page Title */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}

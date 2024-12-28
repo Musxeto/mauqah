@@ -22,12 +22,12 @@ const Homepage = () => {
   };
 
   return (
-    <div className="bg-white text-gray-800 min-h-screen">
+    <div id="heading" className="bg-white text-gray-800 min-h-screen">
       {/* Hero Section */}
       <HeroSection />
 
       {/* Content Section */}
-      <div className="max-w-6xl mx-auto p-6 sm:p-12 lg:p-10">
+      <div  id="hunza" className="max-w-6xl mx-auto p-6 sm:p-12  lg:p-10">
         {/* Hunza Project Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -42,7 +42,7 @@ const Homepage = () => {
             className="relative overflow-hidden rounded-lg mt-8"
             whileHover={{ scale: 1.05 }}
           >
-            <img
+            <img 
               src="/shunza.jpg"
               alt="Shunza Top Image"
               className="w-full h-96 min-h-3.5 object-cover rounded-lg"

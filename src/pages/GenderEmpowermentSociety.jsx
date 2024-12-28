@@ -6,7 +6,7 @@ const GenderEmpowermentSociety = () => {
   return (
     <div className="bg-white text-gray-800 min-h-screen pt-16">
       {/* Page Title */}
-      <div>
+      <div id="heading">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}

@@ -39,7 +39,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="bg-yellow-50 min-h-screen py-20 px-6">
+    <div id='heading' className="bg-yellow-50 min-h-screen py-20 px-6">
       <div className="max-w-7xl mx-auto text-center mb-10">
         <h1 className="text-4xl font-bold text-gray-800">About Us</h1>
       </div>
