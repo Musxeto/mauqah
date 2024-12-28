@@ -12,7 +12,7 @@ const ProfileCard = ({ name, description, imageSrc }) => {
       <div className="flex flex-col items-center">
         <div className="relative">
           {!imageLoaded && (
-            <div className="absolute inset-0 bg-gray-300 animate-pulse"></div>
+            <div className="absolute w-32 h-32 inset-0 bg-gray-300 animate-pulse"></div>
           )}
           <img
             src={imageSrc}

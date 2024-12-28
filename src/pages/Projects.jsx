@@ -41,7 +41,7 @@ const Projects = () => {
                 <img
                   src="/shunza.jpg"
                   alt="Hunza Project"
-                  className={`w-full object-cover rounded-lg h-80 transition-opacity duration-500 ${
+                  className={`w-full object-cover bg-gray-300 rounded-lg h-80 transition-opacity duration-500 ${
                     imageLoaded[0] ? "opacity-100" : "opacity-0"
                   }`}
                   onLoad={() => handleImageLoad(0)}
