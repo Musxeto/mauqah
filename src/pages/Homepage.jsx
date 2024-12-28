@@ -45,7 +45,7 @@ const Homepage = () => {
             <img 
               src="/shunza.jpg"
               alt="Shunza Top Image"
-              className="w-full h-96 min-h-3.5 object-cover rounded-lg"
+              className="w-full h-96 md:min-h-3.5 object-cover rounded-lg"
             />
           </motion.div>
           {/* First Paragraph and Image */}
@@ -138,7 +138,7 @@ const Homepage = () => {
             <motion.div className="video-container flex justify-center items-center mt-4 overflow-hidden ">
               <video
                 controls
-                className="w-3/4 h-fell object-cover rounded-lg shadow-xl"
+                className="w-full md:w-3/4 h-fell object-cover rounded-lg shadow-xl"
                 src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fprincipal-interview.MOV?alt=media"
               />
             </motion.div>
@@ -151,7 +151,7 @@ const Homepage = () => {
             <motion.div className="video-container flex justify-center items-center mt-4 overflow-hidden ">
               <video
                 controls
-                className="w-3/4 h-full object-cover rounded-lg shadow-xl"
+                className="w-full md:w-3/4 h-full object-cover rounded-lg shadow-xl"
                 src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fhunza-student-group.MOV?alt=media"
               />
             </motion.div>
@@ -166,7 +166,7 @@ const Homepage = () => {
               <img
                 src="/HunzaSchool.jpg"
                 alt="Hunza School"
-                className="w-full h-fit object-cover rounded-lg"
+                className="w-full h-96 md:h-fit object-cover rounded-lg"
               />
               <motion.div
                 className="absolute inset-0 bg-black opacity-20 rounded-lg"
@@ -231,7 +231,7 @@ const Homepage = () => {
               <img
                 src="/HunzaSchool2.jpg"
                 alt="Hunza School Teacher"
-                className="w-full min-h-fit object-cover rounded-lg"
+                className="w-full h-96 md:w-full md:min-h-fit object-cover rounded-lg"
               />
               <motion.div
                 className="absolute inset-0 bg-black opacity-20 rounded-lg"
@@ -250,7 +250,7 @@ const Homepage = () => {
               <img
                 src="/HunzaSchool3.jpg"
                 alt="Hunza School"
-                className="w-full h-fit object-cover rounded-lg"
+                className="w-full h-96 md:h-fit object-cover rounded-lg"
               />
               <motion.div
                 className="absolute inset-0 bg-black opacity-20 rounded-lg"
@@ -305,7 +305,7 @@ const Homepage = () => {
             <motion.div className="video-container flex justify-center items-center mt-4 overflow-hidden ">
               <video
                 controls
-                className="w-3/4 h-auto rounded-lg shadow-lg"
+                className="w-full lg:w-3/4 h-auto rounded-lg shadow-lg"
                 src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fmominabad.MOV?alt=media"
               />
             </motion.div>
