@@ -86,35 +86,35 @@ const GenderEmpowermentSociety = () => {
                   <img
                     src="/cropped/gender1.jpg"
                     alt="Pink Ribbon Campaign"
-                    className="h-full object-cover rounded-lg"
+                    className="h-96 w-96 md:w-full md:h-full object-cover rounded-lg"
                   />
                 </div>
                 <div>
                   <img
                     src="/cropped/gender2.jpg"
                     alt="Pink Ribbon Campaign"
-                    className="h-full object-cover rounded-lg"
+                    className="h-96 w-96 md:w-full md:h-full object-cover rounded-lg"
                   />
                 </div>
                 <div>
                   <img
                     src="/cropped/gender1.jpg"
                     alt="Campaign Image"
-                    className="h-full object-cover rounded-lg"
+                    className="h-96 w-96 md:w-full md:h-full object-cover rounded-lg"
                   />
                 </div>
                 <div>
                   <img
                     src="/cropped/gender3.jpg"
                     alt="Campaign Image"
-                    className="h-full object-cover rounded-lg"
+                    className="h-96 w-96 md:w-full md:h-full object-cover rounded-lg"
                   />
                 </div>
                 <div>
                   <img
                     src="/cropped/gender4.jpg"
                     alt="Campaign Image"
-                    className="h-full object-cover rounded-lg"
+                    className="h-96 w-96 md:w-full md:h-full object-cover rounded-lg"
                   />
                 </div>
               </Slider>
