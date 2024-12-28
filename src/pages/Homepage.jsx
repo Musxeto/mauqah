@@ -135,10 +135,10 @@ const Homepage = () => {
               Interview with the Principal of at Al-Amyn
             </h3></div>
            
-            <motion.div className="video-container bg-slate-700 flex justify-center items-center mt-4 overflow-hidden ">
+            <motion.div className="video-container bg-slate-700 shadow-2xl flex justify-center items-center mt-4 overflow-hidden ">
               <video
                 controls
-                className="w-full md:w-3/4 h-fell object-cover rounded-lg shadow-xl"
+                className="w-full md:w-3/4 h-fell object-cover rounded-lg "
                 src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fprincipal-interview.MOV?alt=media"
               />
             </motion.div>
@@ -148,10 +148,10 @@ const Homepage = () => {
               Interview with a group of students at Al-Amyn
             </h3></div>
            
-            <motion.div className="video-container bg-slate-700 flex justify-center items-center mt-4 overflow-hidden ">
+            <motion.div className="video-container bg-slate-700 shadow-2xl flex justify-center items-center mt-4 overflow-hidden ">
               <video
                 controls
-                className="w-full md:w-3/4 h-full object-cover rounded-lg shadow-xl"
+                className="w-full md:w-3/4 h-full object-cover rounded-lg "
                 src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fhunza-student-group.MOV?alt=media"
               />
             </motion.div>
@@ -305,7 +305,7 @@ const Homepage = () => {
             <motion.div className="video-container flex justify-center items-center mt-4 overflow-hidden ">
               <video
                 controls
-                className="w-full bg-slate-700 lg:w-3/4 h-auto rounded-lg shadow-lg"
+                className="w-full bg-slate-700 shadow-2xl lg:w-3/4 h-auto rounded-lg "
                 src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fmominabad.MOV?alt=media"
               />
             </motion.div>
