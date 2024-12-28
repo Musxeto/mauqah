@@ -1,8 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Wave from "react-wavify";
+import Slider from "react-slick";
 
 const GenderEmpowermentSociety = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true,
+  };
+
   return (
     <div className="bg-white text-gray-800 min-h-screen pt-16">
       {/* Page Title */}
@@ -38,43 +50,6 @@ const GenderEmpowermentSociety = () => {
           </p>
         </motion.div>
 
-       {/* White Ribbon Campaign */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.6 }}
-          className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8"
-        >
-          <motion.div
-            className="relative overflow-hidden rounded-lg"
-            whileHover={{ scale: 1.05 }}
-          >
-            <img
-              src="/gender1.jpg"
-              alt="White Ribbon Campaign"
-              className=" h-full object-cover rounded-lg"
-            />
-          </motion.div>
-          <div>
-            <h2 className="text-3xl md:text-5xl font-bold text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
-              White Ribbon Campaign
-            </h2>
-            <p className="mt-4 text-lg md:text-xl leading-relaxed border-l-4 border-yellow-700 pl-4 italic">
-              The <span className="font-bold">White Ribbon Campaign</span> was a
-              collaboration with an initiative to raise awareness about{" "}
-              <span className="font-bold">domestic abuse against women</span> in
-              Pakistan. Despite facing resistance and jokes from some
-              individuals, Shazelle overcame these obstacles by involving them
-              directly in the project. She and her team conducted a white ribbon
-              march with handmade posters around the school and sold White
-              Ribbon merchandise provided by the foundation. By the end of the
-              campaign, they raised approximately{" "}
-              <span className="font-bold">PKR 40,000</span>, which was donated
-              to domestic abuse help centers across Pakistan.
-            </p>
-          </div>
-        </motion.div>
-
         {/* Pink Ribbon Campaign */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -105,29 +80,73 @@ const GenderEmpowermentSociety = () => {
             className="relative overflow-hidden rounded-lg"
             whileHover={{ scale: 1.05 }}
           >
-            <img
-              src="/gender2.jpg"
-              alt="Pink Ribbon Campaign"
-              className=" h-full object-cover rounded-lg"
-            />
+            <motion.div className="relative border-2 border-yellow-300 overflow-hidden rounded-lg">
+              <Slider {...settings}>
+                <div>
+                  <img
+                    src="/cropped/gender1.jpg"
+                    alt="Pink Ribbon Campaign"
+                    className="h-full object-cover rounded-lg"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/cropped/gender2.jpg"
+                    alt="Pink Ribbon Campaign"
+                    className="h-full object-cover rounded-lg"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/cropped/gender1.jpg"
+                    alt="Campaign Image"
+                    className="h-full object-cover rounded-lg"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/cropped/gender3.jpg"
+                    alt="Campaign Image"
+                    className="h-full object-cover rounded-lg"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/cropped/gender4.jpg"
+                    alt="Campaign Image"
+                    className="h-full object-cover rounded-lg"
+                  />
+                </div>
+              </Slider>
+            </motion.div>
           </motion.div>
         </motion.div>
 
-        {/* Closing Images Section */}
-        <motion.div
+        {/* pink Images Section */}
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8"
+          className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8"
         >
           <motion.div
             className="relative overflow-hidden rounded-lg"
             whileHover={{ scale: 1.05 }}
           >
             <img
-              src="/gender3.jpg"
+              src="/cropped/gender1.jpg"
+              alt="White Ribbon Campaign"
+              className=" h-full object-cover rounded-lg"
+            />
+          </motion.div>
+          <motion.div
+            className="relative overflow-hidden rounded-lg"
+            whileHover={{ scale: 1.05 }}
+          >
+            <img
+              src="/cropped/gender3.jpg"
               alt="Campaign Image 3"
-              className="w-full h-80 object-cover rounded-lg"
+              className="w-full h-full object-cover rounded-lg"
             />
           </motion.div>
 
@@ -138,9 +157,36 @@ const GenderEmpowermentSociety = () => {
             <img
               src="/gender4.jpg"
               alt="Campaign Image 4"
-              className="w-full h-80 object-cover rounded-lg"
+              className="w-full h-full object-cover rounded-lg"
             />
           </motion.div>
+        </motion.div> */}
+
+        {/* White Ribbon Campaign */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.6 }}
+          className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8"
+        >
+          <div>
+            <h2 className="text-3xl md:text-5xl font-bold text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
+              White Ribbon Campaign
+            </h2>
+            <p className="mt-4 text-lg md:text-xl leading-relaxed border-l-4 border-yellow-700 pl-4 italic">
+              The <span className="font-bold">White Ribbon Campaign</span> was a
+              collaboration with an initiative to raise awareness about{" "}
+              <span className="font-bold">domestic abuse against women</span> in
+              Pakistan. Despite facing resistance and jokes from some
+              individuals, Shazelle overcame these obstacles by involving them
+              directly in the project. She and her team conducted a white ribbon
+              march with handmade posters around the school and sold White
+              Ribbon merchandise provided by the foundation. By the end of the
+              campaign, they raised approximately{" "}
+              <span className="font-bold">PKR 40,000</span>, which was donated
+              to domestic abuse help centers across Pakistan.
+            </p>
+          </div>
         </motion.div>
       </div>
     </div>
