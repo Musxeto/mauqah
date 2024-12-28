@@ -44,8 +44,8 @@ const Homepage = () => {
           >
             <img 
               src="/shunza.jpg"
-              alt="Shunza Top Image"
-              className="w-full h-96 md:min-h-3.5 object-cover rounded-lg"
+              
+              className="w-full h-96 bg-slate-300 md:min-h-3.5 object-cover rounded-lg"
             />
           </motion.div>
           {/* First Paragraph and Image */}
