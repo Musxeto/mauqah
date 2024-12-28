@@ -104,7 +104,7 @@ const SnippetsShehnaz = () => {
         {/* Part 2 */}
         <div>
           <h3 className="text-2xl md:text-3xl font-bold mb-4 hover:text-yellow-500 transition-colors duration-300">
-            Part 3
+            Part 2
           </h3>
           <AudioPlayer
             src="/shehnaz2.m4a"
