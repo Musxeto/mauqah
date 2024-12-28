@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ProfileCard = ({ name, description, imageSrc }) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 border-2 border-yellow-300">
       <div className="flex flex-col items-center">
-        <img
-          src={imageSrc}
-          alt={name}
-          className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mb-4"
-        />
+        <div className="relative">
+          {!imageLoaded && (
+            <div className="absolute inset-0 bg-gray-300 animate-pulse"></div>
+          )}
+          <img
+            src={imageSrc}
+            className={`w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mb-4 transition-opacity duration-500 ${
+              imageLoaded ? "opacity-100" : "opacity-0"
+            }`}
+            onLoad={handleImageLoad}
+            alt={name}
+          />
+        </div>
         <h2 className="text-xl text-center md:text-3xl font-semibold text-gray-800 mb-2">{name}</h2>
         <p className="text-gray-600 text-lg">{description}</p>
       </div>

@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
+  const [imageLoaded, setImageLoaded] = useState({});
+
+  const handleImageLoad = (index) => {
+    setImageLoaded((prev) => ({ ...prev, [index]: true }));
+  };
   return (
     <div className="bg-white text-gray-800 min-h-screen pt-16">
       {/* Page Title */}
@@ -30,11 +35,17 @@ const Projects = () => {
               className="relative overflow-hidden rounded-lg flex"
               whileHover={{ scale: 1.05 }}
             >
-              <img
-                src="/shunza.jpg"
-                alt="Project 3"
-                className="w-full object-cover rounded-lg h-80"
-              />
+                {!imageLoaded[0] && (
+                  <div className="absolute inset-0 bg-gray-300 animate-pulse"></div>
+                )}
+                <img
+                  src="/shunza.jpg"
+                  alt="Hunza Project"
+                  className={`w-full object-cover rounded-lg h-80 transition-opacity duration-500 ${
+                    imageLoaded[0] ? "opacity-100" : "opacity-0"
+                  }`}
+                  onLoad={() => handleImageLoad(0)}
+                />
             </motion.div>
             <div className="flex flex-col justify-between">
               <h2 className="text-3xl md:text-5xl font-bold text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
@@ -64,10 +75,16 @@ const Projects = () => {
               className="relative overflow-hidden rounded-lg flex"
               whileHover={{ scale: 1.05 }}
             >
+              {!imageLoaded[0] && (
+                <div className="absolute inset-0 bg-gray-300 animate-pulse"></div>
+              )}
               <img
                 src="/gender2.jpg"
-                alt="Project 3"
-                className="w-full object-cover rounded-lg h-80"
+                alt="Hunza Project"
+                className={`w-full object-cover rounded-lg h-80 transition-opacity duration-500 ${
+                  imageLoaded[0] ? "opacity-100" : "opacity-0"
+                }`}
+                onLoad={() => handleImageLoad(0)}
               />
             </motion.div>
             <div className="flex flex-col justify-between">
