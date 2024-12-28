@@ -49,7 +49,7 @@ const WazirabadFieldStudy = () => {
           >
             <video
               controls
-              className="w-full h-auto object-cover rounded-lg shadow-2xl bg-slate-500"
+              className="w-full h-auto object-cover rounded-lg shadow-2xl bg-slate-200"
               src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2FWazirabad1.mp4?alt=media&token=74cf5db3-0d13-4b3b-9764-b37bca38c83c"
             ></video>
           </motion.div>
@@ -99,43 +99,43 @@ const WazirabadFieldStudy = () => {
           className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8"
         >
           <motion.div
-            className="relative overflow-hidden rounded-lg"
+            className="relative overflow-hidden rounded-lg shadow-2xl"
             whileHover={{ scale: 1.05 }}
           >
             <video
               controls
-              className="w-full h-auto object-cover rounded-lg shadow-2xl bg-slate-500"
+              className="w-full h-auto object-cover rounded-lg shadow-2xl bg-slate-200"
               src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fwazirabad2.mov?alt=media"
             ></video>
           </motion.div>
 
           <motion.div
-            className="relative overflow-hidden rounded-lg"
+            className="relative overflow-hidden rounded-lg shadow-2xl"
             whileHover={{ scale: 1.05 }}
           >
             <video
               controls
-              className="w-full h-auto object-cover rounded-lg shadow-2xl bg-slate-500"
+              className="w-full h-auto object-cover rounded-lg shadow-2xl bg-slate-200"
               src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fwazirabad3.mov?alt=media"
             ></video>
           </motion.div>
           <motion.div
-            className="relative overflow-hidden rounded-lg"
+            className="relative overflow-hidden rounded-lg shadow-2xl"
             whileHover={{ scale: 1.05 }}
           >
             <video
               controls
-              className="w-full h-auto object-cover rounded-lg shadow-2xl bg-slate-500"
+              className="w-full h-auto object-cover rounded-lg shadow-2xl bg-slate-200"
               src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fwazirabad4.mov?alt=media"
             ></video>
           </motion.div>
           <motion.div
-            className="relative overflow-hidden rounded-lg"
+            className="relative overflow-hidden rounded-lg shadow-2xl"
             whileHover={{ scale: 1.05 }}
           >
             <video
               controls
-              className="w-full h-auto object-cover rounded-lg shadow-2xl bg-slate-500"
+              className="w-full h-auto object-cover rounded-lg shadow-2xl bg-slate-200"
               src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fwazirabad5.mov?alt=media"
             ></video>
           </motion.div>
