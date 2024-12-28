@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import HeroSection from "../components/HeroSection";
 import { motion } from "framer-motion";
-import { InterviewsSabrina, InterviewsSitara, SnippetsShehnaz } from "../components/Interviews";
+import {
+  InterviewsSabrina,
+  InterviewsSitara,
+  SnippetsShehnaz,
+} from "../components/Interviews";
 
 const Homepage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -81,7 +85,6 @@ const Homepage = () => {
             </motion.div>
           </div>
 
-          {/* Second Paragraph and Image */}
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div
               className="text-lg md:text-xl leading-relaxed"
@@ -98,7 +101,9 @@ const Homepage = () => {
                 mid-July. Initially, Shazelle feared the language barrier and
                 shy interactions she had become accustomed to. However,
                 interacting with the girls at{" "}
-                <span className="font-bold text-yellow-400">Al-Amyn School</span>{" "}
+                <span className="font-bold text-yellow-400">
+                  Al-Amyn School
+                </span>{" "}
                 helped her understand the valley’s wonders and the community’s
                 openness to education, especially for girls. The prevalent
                 teaching in Hunza is,{" "}
@@ -122,6 +127,32 @@ const Homepage = () => {
                 className="absolute inset-0 bg-black opacity-20 rounded-lg"
                 whileHover={{ opacity: 0.3 }}
                 transition={{ duration: 0.3 }}
+              />
+            </motion.div>
+          </div>
+          <div className="mt-8">
+            <div className="flex justify-center "> <h3 className="text-2xl font-semibold text-yellow-600">
+              Interview with the Principal of at Al-Amyn
+            </h3></div>
+           
+            <motion.div className="video-container flex justify-center items-center mt-4 overflow-hidden ">
+              <video
+                controls
+                className="w-3/4 h-fell object-cover rounded-lg shadow-xl"
+                src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fprincipal-interview.MOV?alt=media"
+              />
+            </motion.div>
+          </div>
+          <div className="mt-8">
+            <div className="flex justify-center "> <h3 className="text-2xl font-semibold text-yellow-600">
+              Interview with a group of students at Al-Amyn
+            </h3></div>
+           
+            <motion.div className="video-container flex justify-center items-center mt-4 overflow-hidden ">
+              <video
+                controls
+                className="w-3/4 h-full object-cover rounded-lg shadow-xl"
+                src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fhunza-student-group.MOV?alt=media"
               />
             </motion.div>
           </div>
@@ -267,7 +298,18 @@ const Homepage = () => {
           </motion.div>
 
           {/* Interviews */}
-
+          <div className="mt-8">
+            <h3 className="text-2xl font-semibold text-center text-yellow-600">
+              Interview with a student in Mominabad
+            </h3>
+            <motion.div className="video-container flex justify-center items-center mt-4 overflow-hidden ">
+              <video
+                controls
+                className="w-3/4 h-auto rounded-lg shadow-lg"
+                src="https://firebasestorage.googleapis.com/v0/b/berserkgym-64268.appspot.com/o/mauqah%2Fmominabad.MOV?alt=media"
+              />
+            </motion.div>
+          </div>
           <InterviewsSitara />
           <SnippetsShehnaz />
         </motion.div>
