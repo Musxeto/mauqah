@@ -44,7 +44,7 @@ const Projects = () => {
                   className={`w-full object-cover bg-gray-300 rounded-lg h-80 transition-opacity duration-500 ${
                     imageLoaded[0] ? "opacity-100" : "opacity-0"
                   }`}
-                  onLoad={() => handleImageLoad(0)}
+                  onLoad={() => handleImageLoad(1)}
                 />
             </motion.div>
             <div className="flex flex-col justify-between">
@@ -81,7 +81,7 @@ const Projects = () => {
               <img
                 src="/gender2.jpg"
                 alt="Hunza Project"
-                className={`w-full object-cover rounded-lg h-80 transition-opacity duration-500 ${
+                className={`w-full object-cover bg-gray-300 rounded-lg h-80 transition-opacity duration-500 ${
                   imageLoaded[0] ? "opacity-100" : "opacity-0"
                 }`}
                 onLoad={() => handleImageLoad(0)}
