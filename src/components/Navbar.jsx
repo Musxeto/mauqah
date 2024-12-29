@@ -145,6 +145,12 @@ const Navbar = () => {
                   {project}
                 </Link>
               ))}
+              <Link
+                to={`/#hunza`}
+                className="block px-4 py-2 hover:bg-yellow-100 "
+              >
+                Hunza Project
+              </Link>
             </div>
           </div>
 
