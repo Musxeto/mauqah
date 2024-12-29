@@ -24,7 +24,7 @@ const HeroSection = () => {
         />
 
         {/* Content Section */}
-        <div className="w-full sm:w-1/2 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 text-center sm:text-left py-6 sm:py-6">
+        <div className="w-full sm:w-1/2 max-w-7xl mx-auto px-2 sm:px-8 lg:px-16 text-center sm:text-left py-6 sm:py-6">
           {/* Urdu Quote */}
           <motion.div
             initial={{ opacity: 0, y: -50 }}
@@ -87,7 +87,7 @@ const HeroSection = () => {
                 <img
                   src={`/slider/slider${idx + 1}.jpeg`}
                   alt={`Slide ${idx + 1}`}
-                  className="rounded-lg w-full h-60 md:h-96 object-cover"
+                  className="rounded-lg w-full h- md:h-96 object-cover"
                 />
               </div>
             ))}
