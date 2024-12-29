@@ -34,7 +34,7 @@ const HeroSection = () => {
             <br />
             <br />
             <br />
-            "اپنی تقدیر کے رنگ خود بُنو، یہ کھیل سچّا ہے"
+            <p className="text-xl urdu md:text-4xl">"اپنی تقدیر کے رنگ خود بُنو، یہ کھیل سچّا ہے"</p>
           </motion.div>
 
           {/* Translation */}
