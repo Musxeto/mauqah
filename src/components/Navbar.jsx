@@ -60,6 +60,12 @@ const Navbar = () => {
                     : "opacity-0 max-h-0"
                 } overflow-hidden`}
               >
+                <Link
+                  to={`/#hunza`}
+                  className="block px-4 py-2 hover:bg-yellow-100 "
+                >
+                  Hunza Project
+                </Link>
                 {[
                   "Wazirabad Field Study",
                   "Visit to Jajja",
@@ -134,7 +140,6 @@ const Navbar = () => {
                     setIsOpen(false);
                     setIsDropdownOpen(false);
                   }}
-                  
                   className="block px-4 py-2 hover:bg-yellow-50 hover:text-white"
                 >
                   {project}

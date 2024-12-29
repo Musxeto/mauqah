@@ -25,26 +25,32 @@ const Homepage = () => {
     <div id="heading" className="bg-white text-gray-800 min-h-screen">
       {/* Hero Section */}
       <HeroSection />
-
+      <div id="hunza">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="py-12 bg-yellow-100 text-center"
+        >
+          <h1 className="text-3xl md:text-5xl font-bold text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
+            Hunza Project
+          </h1>
+        </motion.div>
+      </div>
       {/* Content Section */}
-      <div  id="hunza" className="max-w-6xl mx-auto p-6 sm:p-12  lg:p-10">
+      <div className="max-w-6xl mx-auto p-6 sm:p-12  lg:p-10">
         {/* Hunza Project Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="mt-12"
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-center text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
-            Hunza Project
-          </h2>
           <motion.div
             className="relative overflow-hidden rounded-lg mt-8"
             whileHover={{ scale: 1.05 }}
           >
-            <img 
+            <img
               src="/shunza.jpg"
-              
               className="w-full h-96 bg-slate-300 md:min-h-3.5 object-cover rounded-lg"
             />
           </motion.div>
@@ -131,10 +137,13 @@ const Homepage = () => {
             </motion.div>
           </div>
           <div className="mt-8">
-            <div className="flex justify-center "> <h3 className="text-2xl font-semibold text-yellow-600">
-              Interview with the Principal of at Al-Amyn
-            </h3></div>
-           
+            <div className="flex justify-center ">
+              {" "}
+              <h3 className="text-2xl font-semibold text-yellow-600">
+                Interview with the Principal of at Al-Amyn
+              </h3>
+            </div>
+
             <motion.div className="video-container  shadow-black shadow-xl flex justify-center items-center mt-4 overflow-hidden ">
               <video
                 controls
@@ -144,10 +153,13 @@ const Homepage = () => {
             </motion.div>
           </div>
           <div className="mt-8">
-            <div className="flex justify-center "> <h3 className="text-2xl font-semibold text-yellow-600">
-              Interview with a group of students at Al-Amyn
-            </h3></div>
-           
+            <div className="flex justify-center ">
+              {" "}
+              <h3 className="text-2xl font-semibold text-yellow-600">
+                Interview with a group of students at Al-Amyn
+              </h3>
+            </div>
+
             <motion.div className="video-container shadow-black shadow-xl flex justify-center items-center mt-4 overflow-hidden ">
               <video
                 controls
