@@ -147,6 +147,10 @@ const Navbar = () => {
               ))}
               <Link
                 to={`/#hunza`}
+                onClick={() => {
+                  setIsOpen(false);
+                  setIsDropdownOpen(false);
+                }}
                 className="block px-4 py-2 hover:bg-yellow-100 "
               >
                 Hunza Project
