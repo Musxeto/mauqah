@@ -22,7 +22,7 @@ const HeroSection = () => {
         />
 
         {/* Content */}
-        <div className="max-w-7xl mx-auto px-6 py-6 sm:px-12 lg:px-16 text-center">
+        <div className="max-w-7xl mx-auto px-2 py-6 sm:px-12 lg:px-16 text-center">
           {/* Urdu Quote */}
           <motion.div
             initial={{ opacity: 0, y: -50 }}
@@ -34,7 +34,7 @@ const HeroSection = () => {
             <br />
             <br />
             <br />
-            <p className="text-xl urdu md:text-4xl">"اپنی تقدیر کے رنگ خود بُنو، یہ کھیل سچّا ہے"</p>
+            "اپنی تقدیر کے رنگ خود بُنو، یہ کھیل سچّا ہے"
           </motion.div>
 
           {/* Translation */}
