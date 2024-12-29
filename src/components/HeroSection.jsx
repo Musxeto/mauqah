@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Wave from "react-wavify";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Correct styling for Carousel
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 const HeroSection = () => {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ const HeroSection = () => {
         <Wave
           fill="white"
           options={{
-            height: 75,
+            height: 80,
             amplitude: 20,
             speed: 0.2,
             points: 5,
@@ -24,7 +24,7 @@ const HeroSection = () => {
         />
 
         {/* Content Section */}
-        <div className="w-full sm:w-1/2 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 text-center sm:text-left py-6 sm:py-0">
+        <div className="w-full sm:w-1/2 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 text-center sm:text-left py-6 sm:py-6">
           {/* Urdu Quote */}
           <motion.div
             initial={{ opacity: 0, y: -50 }}
@@ -72,7 +72,7 @@ const HeroSection = () => {
         </div>
 
         {/* Slider Section */}
-        <div className="w-full sm:w-1/2 max-w-4xl mx-auto mt-8 sm:mt-0 px-4">
+        <div className="w-full sm:w-1/2 max-w-4xl mx-auto sm:mt-0 px-4">
           <Carousel
             autoPlay
             interval={3000}
@@ -87,7 +87,7 @@ const HeroSection = () => {
                 <img
                   src={`/slider/slider${idx + 1}.jpeg`}
                   alt={`Slide ${idx + 1}`}
-                  className="rounded-lg w-full sm:h-72 md:h-96 object-cover"
+                  className="rounded-lg w-full h-60 md:h-96 object-cover"
                 />
               </div>
             ))}
