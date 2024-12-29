@@ -1,14 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import Wave from "react-wavify";
 import { useNavigate } from "react-router-dom";
+import Wave from "react-wavify";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Correct styling for Carousel
+
 const HeroSection = () => {
   const navigate = useNavigate();
+
   return (
-    <div className="relative min-h-screen flex-col items-center justify-center bg-gradient-to-br from-[#F0CC00] to-[#FBCE80] text-white">
-      
-      <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#FABC05] to-[#FBCE90] text-white">
+    <div className="relative h-screen flex items-center justify-center bg-gradient-to-br from-[#F0CC00] to-[#FBCE80] overflow-hidden text-white">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#FABC05] to-[#FBCE90] flex flex-col sm:flex-row items-center justify-center">
         {/* Background Wave */}
         <Wave
           fill="white"
@@ -21,17 +23,16 @@ const HeroSection = () => {
           className="absolute bottom-0 w-full"
         />
 
-        {/* Content */}
-        <div className="max-w-7xl mx-auto px-2 py-6 sm:px-12 lg:px-16 text-center">
+        {/* Content Section */}
+        <div className="w-full sm:w-1/2 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 text-center sm:text-left py-6 sm:py-0">
           {/* Urdu Quote */}
           <motion.div
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-2xl md:text-4xl font-bold urdu leading-tight "
+            className="text-2xl md:text-4xl font-bold urdu leading-tight"
           >
             "موقع کی تلاش میں نہ رہ، بلبل گُزر چُکی"
-            <br />
             <br />
             <br />
             "اپنی تقدیر کے رنگ خود بُنو، یہ کھیل سچّا ہے"
@@ -42,7 +43,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="mt-10 text-lg md:text-2xl font-medium"
+            className="mt-6 text-lg md:text-2xl font-medium"
           >
             "Do not keep waiting for the perfect opportunity, the nightingale
             has already passed. Create your own destiny, for this game is real.”
@@ -53,44 +54,45 @@ const HeroSection = () => {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="mt-10 flex justify-center space-x-4"
+            className="mt-8 flex justify-center sm:justify-start space-x-4"
           >
             <button
-              onClick={() => {
-                navigate("/projects");
-              }}
-              className="bg-yellow-400 hover:bg-[#FACD99] transition-all px-8 py-3 rounded-full text-sm md:text-lg  font-semibold shadow-xl"
+              onClick={() => navigate("/projects")}
+              className="bg-yellow-400 hover:bg-[#FACD99] transition-all px-6 py-2 md:px-8 md:py-3 rounded-full text-sm md:text-lg font-semibold shadow-xl"
             >
               Projects
             </button>
             <button
-              onClick={() => {
-                navigate("/about");
-              }}
-              className="bg-transparent border border-white hover:bg-white hover:text-yellow-300 transition-all px-8 py-3 rounded-full text-sm md:text-lg font-semibold"
+              onClick={() => navigate("/about")}
+              className="bg-transparent border border-white hover:bg-white hover:text-yellow-300 transition-all px-6 py-2 md:px-8 md:py-3 rounded-full text-sm md:text-lg font-semibold"
             >
               Learn More
             </button>
           </motion.div>
         </div>
-      </div>
-      <div className="bg-white pb-20 ">
-        
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className="text-center"
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 hover:text-yellow-400 duration-300">
-            "Mauqah" <span className="urdu">(موقع)</span>
-          </h2>
-          <p className="text-lg text-gray-800 md:text-xl mt-4">
-            A word from the Urdu language. The direct translation is
-            “opportunity”: a time or set of circumstances that makes it possible
-            to do something.
-          </p>
-        </motion.div>
+
+        {/* Slider Section */}
+        <div className="w-full sm:w-1/2 max-w-4xl mx-auto mt-8 sm:mt-0 px-4">
+          <Carousel
+            autoPlay
+            interval={3000}
+            infiniteLoop
+            showArrows={false}
+            showStatus={false}
+            showThumbs={false}
+            className="rounded-lg overflow-hidden"
+          >
+            {[...Array(6)].map((_, idx) => (
+              <div key={idx}>
+                <img
+                  src={`/slider/slider${idx + 1}.jpeg`}
+                  alt={`Slide ${idx + 1}`}
+                  className="rounded-lg w-full h-80 object-cover"
+                />
+              </div>
+            ))}
+          </Carousel>
+        </div>
       </div>
     </div>
   );

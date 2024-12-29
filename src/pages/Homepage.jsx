@@ -25,6 +25,23 @@ const Homepage = () => {
     <div id="heading" className="bg-white text-gray-800 min-h-screen">
       {/* Hero Section */}
       <HeroSection />
+      <div className="bg-white pb-20">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="text-center"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 hover:text-yellow-400 duration-300">
+            "Mauqah" <span className="urdu">(موقع)</span>
+          </h2>
+          <p className="text-lg text-gray-800 md:text-xl mt-4">
+            A word from the Urdu language. The direct translation is
+            “opportunity”: a time or set of circumstances that makes it possible
+            to do something.
+          </p>
+        </motion.div>
+      </div>
       <div id="hunza">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
