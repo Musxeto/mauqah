@@ -87,7 +87,7 @@ const HeroSection = () => {
                 <img
                   src={`/slider/slider${idx + 1}.jpeg`}
                   alt={`Slide ${idx + 1}`}
-                  className="rounded-lg w-full h-80 object-cover"
+                  className="rounded-lg w-full sm:h-72 md:h-96 object-cover"
                 />
               </div>
             ))}
