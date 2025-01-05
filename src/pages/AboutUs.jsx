@@ -45,9 +45,9 @@ const AboutUs = () => {
       imageSrc: "/sofia.jpg",
     },
     {
-      name: "Dr. Shehnaz Aly Khan",
+      name: "Professor Shehnaz Akhter",
       description:
-        "Dr. Shehnaz is a professor at Bahria University, teaching both undergraduate and master’s students. She holds a PhD in Anthropology and is a native of Hunza. Dr. Shehnaz has conducted multiple anthropological research projects in the area and contributed a chapter to the recent publication “Beyond the Mountains.” She is a mother of two with an adventurous spirit.",
+        "Professor Shehnaz Akhter is a professor at Bahria University, teaching both undergraduate and master’s students. She holds a PhD in Anthropology and is a native of Hunza. Professor Shehnaz Akhter has conducted multiple anthropological research projects in the area and contributed a chapter to the recent publication “Beyond the Mountains.” She is a mother of two with an adventurous spirit.",
       imageSrc: "/shehnaz.jpg",
     },
   ];

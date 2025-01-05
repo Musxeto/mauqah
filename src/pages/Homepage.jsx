@@ -212,14 +212,14 @@ const Homepage = () => {
             >
               <p className="border-l-4 border-yellow-700 pl-4 italic">
                 As Shazelle and her mentor,{" "}
-                <span className="font-bold text-yellow-400">Dr. Shehnaz</span>,
+                <span className="font-bold text-yellow-400">Professor Shehnaz Akhter</span>,
                 drove further into{" "}
                 <span className="font-bold text-yellow-400">Ghulkin</span>, the
                 mountains seemed to close around them. The name Ghulkin, meaning
                 “well” in Brushiski, was fitting. The lush plains and ripening
                 wheat fields created a breathtaking landscape. The
                 glacier-cooled breeze whistled by as they entered the heart of
-                the well. Dr. Shehnaz guided Shazelle through the tight mud
+                the well. Professor Shehnaz Akhter guided Shazelle through the tight mud
                 paths between the houses, sharing insights on how to conduct
                 interviews with locals.{" "}
                 <span className="font-semibold">
@@ -295,7 +295,7 @@ const Homepage = () => {
               transition={{ duration: 1 }}
             >
               <p className="border-l-4 border-yellow-900 pl-4 italic leading-relaxed">
-                Shazelle and Dr. Shehnaz also explored the village of{" "}
+                Shazelle and Professor Shehnaz Akhter also explored the village of{" "}
                 <span className="font-bold text-yellow-400">Karimabad</span>,
                 focusing on the story of the lowest caste in Hunza, who are
                 blacksmiths and musicians. These villagers face constant
@@ -304,7 +304,7 @@ const Homepage = () => {
                 <span className="font-bold">98 households</span> remain in the
                 village. “When people leave here, they change their name, their
                 identity. No one wishes to identify with their roots anymore,”
-                Dr. Shehnaz said with a sad smile. “I fear this place will
+                Professor Shehnaz Akhter said with a sad smile. “I fear this place will
                 disappear within the next 15 years. That is why I am doing this
                 project, so that their struggle is not forgotten.”
               </p>
@@ -319,7 +319,7 @@ const Homepage = () => {
             transition={{ duration: 1 }}
           >
             <p className="text-lg md:text-xl leading-relaxed italic">
-              Shazelle, who was an understudy while Dr. Shehnaz was writing her
+              Shazelle, who was an understudy while Professor Shehnaz Akhter was writing her
               PhD thesis, continues to work with her mentor on research
               regarding women’s education in Hunza during her post-graduate
               year.
